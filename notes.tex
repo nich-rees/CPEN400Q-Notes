@@ -1,0 +1,43 @@
+\documentclass[11pt]{scrartcl}
+\usepackage[sexy]{preamble}
+
+% Probably eventually put this in the preamble
+\lstdefinestyle{PennyLane}{
+    language=Python,
+    basicstyle=\ttfamily,
+}
+\lstset{style=PennyLane}
+
+\begin{document}
+\title{CPEN 400Q: Gate-Model Quantum Computing}
+\author{Nicholas Rees}
+\date{\today}
+\maketitle
+
+%%fakesection Frontmatter
+\begin{abstract}
+	This is a set of notes based on the CPEN400Q class offered at UBC
+    during the Jan-April 2023 term, taught by Olivia di Matteo.
+    It largely follows the slides and demos that can be found 
+    \href{https://github.com/glassnotes/CPEN-400Q}{here},
+    as well as the reading materials noted at the end of the slides
+    (with about one subsection roughly corresponding to one lecture).
+    I have also added material I found interesting or insightful from the quizzes/assignments,
+    however with any answers omitted.
+    The prerequisites for understandng these notes are what I had going into the course:
+    a decent background in basic linear algebra and python
+    (and probably some calculus, basic computer science, and classical physics),
+    pretty similar to \href{https://codebook.xanadu.ai/T.1}{this}.
+    It goes without saying that any error here are my own, and if found,
+    please email me at \href{mailto:imnichh@gmail.com}{imnichh@gmail.com}.
+\end{abstract}
+
+\addtocontents{toc}{\protect\hypertarget{toc}{}}
+\tableofcontents
+\newpage
+
+\include{tex/single_qubit}
+
+\end{document}
+%                                                                                                  |
+%                                                                              |
